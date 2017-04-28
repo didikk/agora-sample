@@ -20,7 +20,7 @@ This 10-step tutorial will help you get video chat integrated directly into your
 1. Create a developer account and obtain an App ID at http://www.agora.io
 2. Update "app/src/main/res/values/strings.xml" with your App ID
 3. Download the Android SDK from the "Getting Started" tab
-4. Unzip the downloaded SDK package and copy the "*.jar" to "app/libs", "arm64-v8a"/"x86"/"armeabi-v7a" to "app/src/main/jniLibs"
+4. Unzip the downloaded SDK package and copy the "*.jar" to "app/libs", "arm64-v8a"/"x86"/"armeabi-v7a" to "app/src/main/libs"
 
 ## Enjoy!
 
