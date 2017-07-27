@@ -183,7 +183,13 @@ public class VideoChatViewActivity extends AppCompatActivity {
 
     // Tutorial Step 1
     private void initializeAgoraEngine() {
-        mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.agora_app_id), mRtcEventHandler);
+        try {
+            mRtcEngine = RtcEngine.create(getBaseContext(), getString(R.string.agora_app_id), mRtcEventHandler);
+        } catch (Exception e) {
+            Log.e(LOG_TAG, Log.getStackTraceString(e));
+
+            throw new RuntimeException("NEED TO check rtc sdk init fatal error\n" + Log.getStackTraceString(e));
+        }
     }
 
     // Tutorial Step 2
